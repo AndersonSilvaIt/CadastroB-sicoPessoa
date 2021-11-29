@@ -122,8 +122,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\CadasrtoCliente.resx">
+      <DependentUpon>CadasrtoCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ClienteListagem.resx">
       <DependentUpon>ClienteListagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormClienteEditar.resx">
+      <DependentUpon>FormClienteEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormListFuncionario.resx">
       <DependentUpon>FormListFuncionario.cs</DependentUpon>

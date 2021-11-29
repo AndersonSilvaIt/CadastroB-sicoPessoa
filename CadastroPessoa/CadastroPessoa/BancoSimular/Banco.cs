@@ -19,7 +19,7 @@ namespace CadastroPessoa.BancoSimular {
 		public static List<Cliente> Clientes = new List<Cliente> {
 
 			new Cliente { cod_cli = "01", nome_cli = "Cliente 01", cpf_cli = "999.999.999-99",
-			 datanasc_cli = new DateTime(), email_cli = "pessoa01@gmail.com", rg_cli = "99.999.999-99",
+			 datanasc_cli = "10/10/2010", email_cli = "pessoa01@gmail.com", rg_cli = "99.999.999-99",
 			 telefone_celular_cli = "(99) 99999-9999", telefone_fixo_cli = "99 9999-9999"}
 		};
 

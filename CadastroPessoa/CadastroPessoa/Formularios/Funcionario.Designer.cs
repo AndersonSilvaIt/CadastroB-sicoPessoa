@@ -31,7 +31,6 @@
 			this.txtcelular_func = new System.Windows.Forms.TextBox();
 			this.txtemail_func = new System.Windows.Forms.TextBox();
 			this.txttelefone_func = new System.Windows.Forms.TextBox();
-			this.txtsalario_func = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -40,12 +39,13 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
 			this.btnSalvar = new System.Windows.Forms.Button();
-			this.label10 = new System.Windows.Forms.Label();
+			this.txtsalario_func = new System.Windows.Forms.TextBox();
+			this.label9 = new System.Windows.Forms.Label();
 			this.txtLogin = new System.Windows.Forms.TextBox();
-			this.label11 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
 			this.txtSenha = new System.Windows.Forms.TextBox();
+			this.label11 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// txtCod_func
@@ -103,13 +103,6 @@
 			this.txttelefone_func.Name = "txttelefone_func";
 			this.txttelefone_func.Size = new System.Drawing.Size(248, 20);
 			this.txttelefone_func.TabIndex = 5;
-			// 
-			// txtsalario_func
-			// 
-			this.txtsalario_func.Location = new System.Drawing.Point(142, 237);
-			this.txtsalario_func.Name = "txtsalario_func";
-			this.txtsalario_func.Size = new System.Drawing.Size(248, 20);
-			this.txtsalario_func.TabIndex = 8;
 			// 
 			// label1
 			// 
@@ -184,15 +177,6 @@
 			this.label8.TabIndex = 15;
 			this.label8.Text = "Email";
 			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(28, 242);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(39, 13);
-			this.label9.TabIndex = 17;
-			this.label9.Text = "Salario";
-			// 
 			// btnSalvar
 			// 
 			this.btnSalvar.Location = new System.Drawing.Point(156, 333);
@@ -203,6 +187,29 @@
 			this.btnSalvar.UseVisualStyleBackColor = true;
 			this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
 			// 
+			// txtsalario_func
+			// 
+			this.txtsalario_func.Location = new System.Drawing.Point(142, 237);
+			this.txtsalario_func.Name = "txtsalario_func";
+			this.txtsalario_func.Size = new System.Drawing.Size(248, 20);
+			this.txtsalario_func.TabIndex = 8;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(28, 242);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(39, 13);
+			this.label9.TabIndex = 17;
+			this.label9.Text = "Salario";
+			// 
+			// txtLogin
+			// 
+			this.txtLogin.Location = new System.Drawing.Point(142, 263);
+			this.txtLogin.Name = "txtLogin";
+			this.txtLogin.Size = new System.Drawing.Size(248, 20);
+			this.txtLogin.TabIndex = 19;
+			// 
 			// label10
 			// 
 			this.label10.AutoSize = true;
@@ -212,12 +219,12 @@
 			this.label10.TabIndex = 20;
 			this.label10.Text = "Login";
 			// 
-			// txtLogin
+			// txtSenha
 			// 
-			this.txtLogin.Location = new System.Drawing.Point(142, 263);
-			this.txtLogin.Name = "txtLogin";
-			this.txtLogin.Size = new System.Drawing.Size(248, 20);
-			this.txtLogin.TabIndex = 19;
+			this.txtSenha.Location = new System.Drawing.Point(142, 289);
+			this.txtSenha.Name = "txtSenha";
+			this.txtSenha.Size = new System.Drawing.Size(248, 20);
+			this.txtSenha.TabIndex = 21;
 			// 
 			// label11
 			// 
@@ -227,13 +234,6 @@
 			this.label11.Size = new System.Drawing.Size(38, 13);
 			this.label11.TabIndex = 22;
 			this.label11.Text = "Senha";
-			// 
-			// txtSenha
-			// 
-			this.txtSenha.Location = new System.Drawing.Point(142, 289);
-			this.txtSenha.Name = "txtSenha";
-			this.txtSenha.Size = new System.Drawing.Size(248, 20);
-			this.txtSenha.TabIndex = 21;
 			// 
 			// Formulario
 			// 
@@ -281,7 +281,6 @@
 		private System.Windows.Forms.TextBox txtcelular_func;
 		private System.Windows.Forms.TextBox txtemail_func;
 		private System.Windows.Forms.TextBox txttelefone_func;
-		private System.Windows.Forms.TextBox txtsalario_func;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
@@ -290,11 +289,12 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Button btnSalvar;
-		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.TextBox txtsalario_func;
+		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.TextBox txtLogin;
-		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.TextBox txtSenha;
+		private System.Windows.Forms.Label label11;
 	}
 }
