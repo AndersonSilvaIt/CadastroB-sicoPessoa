@@ -25,5 +25,10 @@ namespace CadastroPessoa.Formularios {
 			listagemProduto.ShowDialog();
 
 		}
+
+		private void btnVenda_Click(object sender, EventArgs e) {
+			VendaListagem frmListagem = new VendaListagem();
+			frmListagem.ShowDialog();
+		}
 	}
 }

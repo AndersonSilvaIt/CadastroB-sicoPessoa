@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CadastroPessoa.BancoSimular;
+using CadastroPessoa.Classes;
+using System;
 using System.Windows.Forms;
 
 namespace CadastroPessoa.Formularios {
@@ -13,5 +8,18 @@ namespace CadastroPessoa.Formularios {
 		public CadastroProduto() {
 			InitializeComponent();
 		}
+
+		private void btnSalvar_Click(object sender, EventArgs e) {
+
+			Produto produto = new Produto();
+			produto.cod_prod = txtCod_func.Text;
+			produto.descricao_prod = txtDescricao.Text;
+			produto.nome_prod = txtNome.Text;
+			produto.valor_venda_prod = decimal.Parse(txtValorVenda.Text);
+
+			Banco.Produtos.Add(produto);
+			this.Close();
+		}
+
 	}
 }

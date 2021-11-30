@@ -23,6 +23,11 @@ namespace CadastroPessoa.BancoSimular {
 			 telefone_celular_cli = "(99) 99999-9999", telefone_fixo_cli = "99 9999-9999"}
 		};
 
+		public static List<Produto> Produtos = new List<Produto> {
+			new Produto { cod_prod = "01", descricao_prod = "Produto 01", marca_prod = "Marca 01",
+			 nome_prod = "Produto 01", valor_venda_prod = 100}
+		};
 
+		public static List<Venda> Vendas = new List<Venda>();
 	}
 }

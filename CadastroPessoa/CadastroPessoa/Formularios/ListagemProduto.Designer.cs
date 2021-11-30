@@ -25,10 +25,10 @@
 		private void InitializeComponent() {
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.btnEditar = new System.Windows.Forms.Button();
 			this.btnExcluir = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.gridProduto = new System.Windows.Forms.DataGridView();
+			((System.ComponentModel.ISupportInitialize)(this.gridProduto)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnAdd
@@ -50,14 +50,6 @@
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Listagem Produtos";
 			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(28, 88);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(657, 192);
-			this.dataGridView1.TabIndex = 2;
-			// 
 			// btnEditar
 			// 
 			this.btnEditar.Location = new System.Drawing.Point(529, 317);
@@ -66,6 +58,7 @@
 			this.btnEditar.TabIndex = 3;
 			this.btnEditar.Text = "Editar";
 			this.btnEditar.UseVisualStyleBackColor = true;
+			this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
 			// 
 			// btnExcluir
 			// 
@@ -75,21 +68,40 @@
 			this.btnExcluir.TabIndex = 4;
 			this.btnExcluir.Text = "Excluir";
 			this.btnExcluir.UseVisualStyleBackColor = true;
+			this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+			// 
+			// gridProduto
+			// 
+			this.gridProduto.AllowUserToAddRows = false;
+			this.gridProduto.AllowUserToDeleteRows = false;
+			this.gridProduto.AllowUserToResizeColumns = false;
+			this.gridProduto.AllowUserToResizeRows = false;
+			this.gridProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.gridProduto.Location = new System.Drawing.Point(15, 105);
+			this.gridProduto.Name = "gridProduto";
+			this.gridProduto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.gridProduto.ShowCellErrors = false;
+			this.gridProduto.ShowCellToolTips = false;
+			this.gridProduto.ShowEditingIcon = false;
+			this.gridProduto.ShowRowErrors = false;
+			this.gridProduto.Size = new System.Drawing.Size(666, 150);
+			this.gridProduto.TabIndex = 5;
+			this.gridProduto.VirtualMode = true;
 			// 
 			// ListagemProduto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(697, 360);
+			this.Controls.Add(this.gridProduto);
 			this.Controls.Add(this.btnExcluir);
 			this.Controls.Add(this.btnEditar);
-			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnAdd);
 			this.Name = "ListagemProduto";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "ListagemProduto";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridProduto)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -99,8 +111,8 @@
 
 		private System.Windows.Forms.Button btnAdd;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button btnEditar;
 		private System.Windows.Forms.Button btnExcluir;
+		private System.Windows.Forms.DataGridView gridProduto;
 	}
 }

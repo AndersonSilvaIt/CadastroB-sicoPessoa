@@ -5,7 +5,7 @@
 		public int quantidade_itenv { get; set; }
 		public decimal valor_itenv { get; set; }
 		public decimal valor_total_itenv { get; set; }
-		public int cod_prod_fk { get; set; }
-		public int cod_vend_fk { get; set; }
+		public string cod_prod_fk { get; set; }
+		public string cod_vend_fk { get; set; }
 	}
 }
