@@ -22,6 +22,7 @@ namespace CadastroPessoa.Formularios {
 			else {
 
 				FormMenu frmMenu = new FormMenu();
+				
 				frmMenu.ShowDialog();
 			}
 

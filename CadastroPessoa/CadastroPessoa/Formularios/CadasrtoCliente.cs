@@ -10,6 +10,7 @@ namespace CadastroPessoa.Formularios {
 		}
 
 		private void btnSalvar_Click(object sender, EventArgs e) {
+
 			Cliente cliente = new Cliente();
 			cliente.cod_cli = txtCodigo.Text;
 			cliente.nome_cli = txtNome.Text;
@@ -21,6 +22,7 @@ namespace CadastroPessoa.Formularios {
 			cliente.datanasc_cli = txtDataNascimento.Text;
 
 			Banco.Clientes.Add(cliente);
+
 			this.Close();
 		}
 

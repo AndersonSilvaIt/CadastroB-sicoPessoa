@@ -14,8 +14,16 @@ namespace CadastroPessoa.Formularios {
 		}
 
 		private void btnCliente_Click(object sender, EventArgs e) {
+
 			ClienteListagem frmCliente = new ClienteListagem();
 			frmCliente.ShowDialog();
+		}
+
+		private void btnProduto_Click(object sender, EventArgs e) {
+
+			ListagemProduto listagemProduto = new ListagemProduto();
+			listagemProduto.ShowDialog();
+
 		}
 	}
 }

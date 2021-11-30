@@ -76,12 +76,16 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
 			this.ClientSize = new System.Drawing.Size(423, 166);
 			this.Controls.Add(this.btnEntrar);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.txtSenha);
 			this.Controls.Add(this.txtLogin);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "Login";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Login";

@@ -72,6 +72,12 @@
     <Compile Include="Formularios\CadastroFornecedor.Designer.cs">
       <DependentUpon>CadastroFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\CadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CadastroProduto.Designer.cs">
+      <DependentUpon>CadastroProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ClienteListagem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     <Compile Include="Formularios\Funcionario.Designer.cs">
       <DependentUpon>Funcionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ListagemProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListagemProduto.Designer.cs">
+      <DependentUpon>ListagemProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\CadasrtoCliente.resx">
       <DependentUpon>CadasrtoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CadastroProduto.resx">
+      <DependentUpon>CadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ClienteListagem.resx">
       <DependentUpon>ClienteListagem.cs</DependentUpon>
@@ -142,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Funcionario.resx">
       <DependentUpon>Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListagemProduto.resx">
+      <DependentUpon>ListagemProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
